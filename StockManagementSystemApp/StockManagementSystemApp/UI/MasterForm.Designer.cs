@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.userLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.passwordLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -107,13 +108,13 @@
             // stockInToolStripMenuItem
             // 
             this.stockInToolStripMenuItem.Name = "stockInToolStripMenuItem";
-            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
+            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.stockInToolStripMenuItem.Text = "Stock In";
             // 
             // stockOutToolStripMenuItem
             // 
             this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
-            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
+            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.stockOutToolStripMenuItem.Text = "Stock Out";
             // 
             // aboutToolStripMenuItem
@@ -178,6 +179,7 @@
             this.userLabel.AutoSize = true;
             this.userLabel.BackColor = System.Drawing.Color.Transparent;
             this.userLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.userLabel.Location = new System.Drawing.Point(3, 694);
             this.userLabel.Name = "userLabel";
             this.userLabel.Size = new System.Drawing.Size(91, 20);
@@ -194,12 +196,22 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Location = new System.Drawing.Point(22, 643);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(0, 13);
+            this.passwordLabel.TabIndex = 19;
+            this.passwordLabel.Visible = false;
+            // 
             // MasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StockManagementSystemApp.Properties.Resources._12;
             this.ClientSize = new System.Drawing.Size(1315, 741);
+            this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.label1);
@@ -210,6 +222,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock Management System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MasterForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -237,5 +250,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label passwordLabel;
     }
 }

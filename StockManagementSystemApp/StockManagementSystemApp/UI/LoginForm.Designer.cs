@@ -94,20 +94,19 @@
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTextBox.Location = new System.Drawing.Point(183, 84);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(247, 24);
+            this.passwordTextBox.Size = new System.Drawing.Size(247, 25);
             this.passwordTextBox.TabIndex = 2;
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.userNameTextBox.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameTextBox.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameTextBox.Location = new System.Drawing.Point(183, 46);
             this.userNameTextBox.Name = "userNameTextBox";
-            this.userNameTextBox.Size = new System.Drawing.Size(247, 24);
+            this.userNameTextBox.Size = new System.Drawing.Size(247, 25);
             this.userNameTextBox.TabIndex = 1;
             // 
             // PasswordLabel

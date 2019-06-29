@@ -23,5 +23,13 @@ namespace StockManagementSystemApp.UI
             this.Hide();
             loginForm.Show();
         }
+
+        private void MasterForm_Load(object sender, EventArgs e)
+        {
+            userLabel.Text = "";
+            passwordLabel.Text = "";
+            userLabel.Text = "User Name- " + LoginForm.UserName;
+            passwordLabel.Text = LoginForm.Password;
+        }
     }
 }
