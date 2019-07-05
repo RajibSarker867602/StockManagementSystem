@@ -82,6 +82,7 @@
             this.companySetupToolStripMenuItem.Name = "companySetupToolStripMenuItem";
             this.companySetupToolStripMenuItem.Size = new System.Drawing.Size(226, 30);
             this.companySetupToolStripMenuItem.Text = "Company Setup";
+            this.companySetupToolStripMenuItem.Click += new System.EventHandler(this.companySetupToolStripMenuItem_Click_1);
             // 
             // categorySetupToolStripMenuItem
             // 

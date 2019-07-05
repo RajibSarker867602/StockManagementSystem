@@ -125,34 +125,34 @@ namespace StockManagementSystem.Repository
             }
             return false;
         }
-        //public List<Category> GetCategoriesByCompany(Company company)
-        //{
-        //    List<Category> categories = new List<Category>();
-        //    connection = new ConnectionClass();
-        //    string query = "Select DISTINCT c.Name,c.Id From Items AS i INNER JOIN Categories AS c ON i.CategoryId=c.Id Where CompanyId=@company";
-        //    try
-        //    {                
-        //        cmd = new SqlCommand(query, connection.GetConnection());
-        //        cmd.Parameters.Clear();
-        //        cmd.Parameters.AddWithValue("@company", company.Id);
-        //        reader = cmd.ExecuteReader();
-        //        while (reader.Read())
-        //        {
-        //            Category category = new Category();
-        //            category.Id =Convert.ToInt32(reader["Id"]);
-        //            category.CategoryName = reader["Name"].ToString();
-        //            categories.Add(category);
-        //        }
-        //    }
-        //    catch(Exception ex)
-        //    {
-        //        categories = null;
-        //    }
-        //    finally
-        //    {
-        //        connection.GetClose();
-        //    }
-        //    return categories;
-        //}
+        public List<Category> GetCategoriesByCompany(Company company)
+        {
+            List<Category> categories = new List<Category>();
+            connection = new ConnectionClass();
+            string query = "Select DISTINCT c.Name,c.Id From Items AS i INNER JOIN Categories AS c ON i.CategoryId=c.Id Where CompanyId=@company";
+            try
+            {
+                cmd = new SqlCommand(query, connection.GetConnection());
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@company", company.Id);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Category category = new Category();
+                    category.Id = Convert.ToInt32(reader["Id"]);
+                    category.CategoryName = reader["Name"].ToString();
+                    categories.Add(category);
+                }
+            }
+            catch (Exception ex)
+            {
+                categories = null;
+            }
+            finally
+            {
+                connection.GetClose();
+            }
+            return categories;
+        }
     }
 }

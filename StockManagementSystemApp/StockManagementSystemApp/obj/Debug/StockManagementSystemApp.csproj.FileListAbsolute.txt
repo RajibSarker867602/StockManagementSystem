@@ -80,6 +80,8 @@ C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManageme
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csprojAssemblyReference.cache
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.Properties.Resources.resources
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.ItemForm.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystem.UI.companySetupForm.resources
+>>>>>>> 54f82a6f4f8973fc2ad3c00b643109b7bbc07928
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.LoginForm.resources
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.MasterForm.resources
 C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.ProgressForm.resources

@@ -41,10 +41,10 @@ namespace StockManagementSystem.Manager
             }
             return false;
         }
-        //public List<Category> GetCategoriesByCompany(Company company)
-        //{
-        //    return _categoryRepository.GetCategoriesByCompany(company);
-        //}
+        public List<Category> GetCategoriesByCompany(Company company)
+        {
+            return _categoryRepository.GetCategoriesByCompany(company);
+        }
     }
     
 }

@@ -48,12 +48,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manager\CategoryManager.cs" />
+    <Compile Include="Manager\CompanyManager.cs" />
     <Compile Include="Manager\ItemManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Repository\CategoryRepository.cs" />
+    <Compile Include="Repository\CompanyRepository.cs" />
     <Compile Include="Repository\ConnectionClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +67,12 @@
     </Compile>
     <Compile Include="UI\categorySetupForm.designer.cs">
       <DependentUpon>categorySetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\companySetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\companySetupForm.designer.cs">
+      <DependentUpon>companySetupForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\ItemForm.cs">
       <SubType>Form</SubType>
@@ -99,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\companySetupForm.resx">
+      <DependentUpon>companySetupForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\ItemForm.resx">
       <DependentUpon>ItemForm.cs</DependentUpon>
     </EmbeddedResource>

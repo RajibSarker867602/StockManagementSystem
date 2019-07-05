@@ -32,16 +32,23 @@ namespace StockManagementSystemApp.UI
             userLabel.Text = "User Name- " + LoginForm.UserName;
             passwordLabel.Text = LoginForm.Password;
         }
+
         private void iToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ItemForm itemForm = new ItemForm();
             itemForm.Show();
         }
-       
+
         private void categorySetupToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             categorySetupForm category = new categorySetupForm();
             category.Show();
+        }
+        
+        private void companySetupToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            companySetupForm company = new companySetupForm();
+            company.Show();
         }
     }
 }
