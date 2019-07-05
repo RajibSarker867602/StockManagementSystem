@@ -88,6 +88,7 @@
             this.categorySetupToolStripMenuItem.Name = "categorySetupToolStripMenuItem";
             this.categorySetupToolStripMenuItem.Size = new System.Drawing.Size(226, 30);
             this.categorySetupToolStripMenuItem.Text = "Category Setup";
+            this.categorySetupToolStripMenuItem.Click += new System.EventHandler(this.categorySetupToolStripMenuItem_Click);
             // 
             // iToolStripMenuItem
             // 
@@ -108,13 +109,13 @@
             // stockInToolStripMenuItem
             // 
             this.stockInToolStripMenuItem.Name = "stockInToolStripMenuItem";
-            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockInToolStripMenuItem.Text = "Stock In";
             // 
             // stockOutToolStripMenuItem
             // 
             this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
-            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockOutToolStripMenuItem.Text = "Stock Out";
             // 
             // aboutToolStripMenuItem

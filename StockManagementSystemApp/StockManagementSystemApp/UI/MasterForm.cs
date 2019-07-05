@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockManagementSystem.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,12 @@ namespace StockManagementSystemApp.UI
             passwordLabel.Text = "";
             userLabel.Text = "User Name- " + LoginForm.UserName;
             passwordLabel.Text = LoginForm.Password;
+        }
+
+        private void categorySetupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            categorySetupForm category = new categorySetupForm();
+            category.Show();
         }
     }
 }

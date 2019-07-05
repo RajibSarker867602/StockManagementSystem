@@ -22,3 +22,15 @@ D:\ASP.NET Work\BITM Course Files\GIT Files\StockManagementSystem\StockManagemen
 D:\ASP.NET Work\BITM Course Files\GIT Files\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csproj.CoreCompileInputs.cache
 D:\ASP.NET Work\BITM Course Files\GIT Files\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.exe
 D:\ASP.NET Work\BITM Course Files\GIT Files\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.pdb
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.exe.config
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.exe
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.pdb
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.Properties.Resources.resources
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.LoginForm.resources
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.MasterForm.resources
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.ProgressForm.resources
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.exe
+C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.pdb
