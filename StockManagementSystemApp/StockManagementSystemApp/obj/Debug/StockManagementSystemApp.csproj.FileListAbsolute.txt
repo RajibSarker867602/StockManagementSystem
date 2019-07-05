@@ -77,3 +77,16 @@ C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManageme
 C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.exe
 C:\Users\HP\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.pdb
 >>>>>>> 3cb0970e52dc5d35a3a6abf0416844414b3814e0
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csprojAssemblyReference.cache
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.Properties.Resources.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.ItemForm.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.LoginForm.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.MasterForm.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.UI.ProgressForm.resources
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csproj.GenerateResource.cache
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.csproj.CoreCompileInputs.cache
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.exe
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\obj\Debug\StockManagementSystemApp.pdb
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.exe.config
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.exe
+C:\Users\rajib\Desktop\StockManagementSystem\StockManagementSystemApp\StockManagementSystemApp\bin\Debug\StockManagementSystemApp.pdb

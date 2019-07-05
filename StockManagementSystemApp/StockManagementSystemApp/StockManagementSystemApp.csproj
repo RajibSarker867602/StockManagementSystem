@@ -47,14 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\CategoryManager.cs" />
     <Compile Include="Manager\ItemManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
-<<<<<<< HEAD
-    <Compile Include="Models\Item.cs" />
-=======
-    <Compile Include="Manager\CategoryManager.cs" />
     <Compile Include="Models\Category.cs" />
->>>>>>> 3cb0970e52dc5d35a3a6abf0416844414b3814e0
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Repository\CategoryRepository.cs" />
     <Compile Include="Repository\ConnectionClass.cs" />
@@ -62,19 +59,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ItemRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
-<<<<<<< HEAD
-    <Compile Include="UI\ItemForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\ItemForm.Designer.cs">
-      <DependentUpon>ItemForm.cs</DependentUpon>
-=======
     <Compile Include="UI\categorySetupForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\categorySetupForm.designer.cs">
       <DependentUpon>categorySetupForm.cs</DependentUpon>
->>>>>>> 3cb0970e52dc5d35a3a6abf0416844414b3814e0
+    </Compile>
+    <Compile Include="UI\ItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ItemForm.Designer.cs">
+      <DependentUpon>ItemForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\LoginForm.cs">
       <SubType>Form</SubType>
