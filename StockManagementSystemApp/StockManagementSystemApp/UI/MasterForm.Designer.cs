@@ -88,6 +88,7 @@
             this.categorySetupToolStripMenuItem.Name = "categorySetupToolStripMenuItem";
             this.categorySetupToolStripMenuItem.Size = new System.Drawing.Size(226, 30);
             this.categorySetupToolStripMenuItem.Text = "Category Setup";
+            this.categorySetupToolStripMenuItem.Click += new System.EventHandler(this.categorySetupToolStripMenuItem_Click);
             // 
             // iToolStripMenuItem
             // 
