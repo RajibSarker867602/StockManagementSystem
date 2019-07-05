@@ -94,6 +94,7 @@
             this.iToolStripMenuItem.Name = "iToolStripMenuItem";
             this.iToolStripMenuItem.Size = new System.Drawing.Size(226, 30);
             this.iToolStripMenuItem.Text = "Item Setup";
+            this.iToolStripMenuItem.Click += new System.EventHandler(this.iToolStripMenuItem_Click);
             // 
             // operationToolStripMenuItem1
             // 
@@ -108,13 +109,13 @@
             // stockInToolStripMenuItem
             // 
             this.stockInToolStripMenuItem.Name = "stockInToolStripMenuItem";
-            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockInToolStripMenuItem.Text = "Stock In";
             // 
             // stockOutToolStripMenuItem
             // 
             this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
-            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockOutToolStripMenuItem.Text = "Stock Out";
             // 
             // aboutToolStripMenuItem
@@ -210,7 +211,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StockManagementSystemApp.Properties.Resources._12;
-            this.ClientSize = new System.Drawing.Size(1315, 741);
+            this.ClientSize = new System.Drawing.Size(1315, 733);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.userLabel);
