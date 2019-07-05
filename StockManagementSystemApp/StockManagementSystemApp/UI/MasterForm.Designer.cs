@@ -82,6 +82,7 @@
             this.companySetupToolStripMenuItem.Name = "companySetupToolStripMenuItem";
             this.companySetupToolStripMenuItem.Size = new System.Drawing.Size(226, 30);
             this.companySetupToolStripMenuItem.Text = "Company Setup";
+            this.companySetupToolStripMenuItem.Click += new System.EventHandler(this.companySetupToolStripMenuItem_Click);
             // 
             // categorySetupToolStripMenuItem
             // 
@@ -108,13 +109,13 @@
             // stockInToolStripMenuItem
             // 
             this.stockInToolStripMenuItem.Name = "stockInToolStripMenuItem";
-            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockInToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockInToolStripMenuItem.Text = "Stock In";
             // 
             // stockOutToolStripMenuItem
             // 
             this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
-            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockOutToolStripMenuItem.Text = "Stock Out";
             // 
             // aboutToolStripMenuItem
