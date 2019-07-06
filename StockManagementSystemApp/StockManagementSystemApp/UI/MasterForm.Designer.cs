@@ -120,6 +120,7 @@
             this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
             this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockOutToolStripMenuItem.Text = "Stock Out";
+            this.stockOutToolStripMenuItem.Click += new System.EventHandler(this.stockOutToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -136,12 +137,14 @@
             this.searchViewSummarToolStripMenuItem.Name = "searchViewSummarToolStripMenuItem";
             this.searchViewSummarToolStripMenuItem.Size = new System.Drawing.Size(379, 30);
             this.searchViewSummarToolStripMenuItem.Text = "Search and View Summary";
+            this.searchViewSummarToolStripMenuItem.Click += new System.EventHandler(this.searchViewSummarToolStripMenuItem_Click);
             // 
             // viewBetweenTwoDatesReportsToolStripMenuItem
             // 
             this.viewBetweenTwoDatesReportsToolStripMenuItem.Name = "viewBetweenTwoDatesReportsToolStripMenuItem";
             this.viewBetweenTwoDatesReportsToolStripMenuItem.Size = new System.Drawing.Size(379, 30);
             this.viewBetweenTwoDatesReportsToolStripMenuItem.Text = "View Between Two Dates Reports";
+            this.viewBetweenTwoDatesReportsToolStripMenuItem.Click += new System.EventHandler(this.viewBetweenTwoDatesReportsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem1
             // 
@@ -149,6 +152,7 @@
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
             this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(80, 29);
             this.aboutToolStripMenuItem1.Text = "About";
+            this.aboutToolStripMenuItem1.Click += new System.EventHandler(this.aboutToolStripMenuItem1_Click);
             // 
             // exitToolStripMenuItem
             // 

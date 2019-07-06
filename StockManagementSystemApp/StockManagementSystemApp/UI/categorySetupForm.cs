@@ -117,12 +117,19 @@ namespace StockManagementSystemApp.UI
 
         private void BindCategoriesListGridView(List<Category> categories)
         {
-            int serial = 0;
-            categoriesListGirdView.Rows.Clear();
-            foreach(var category in categories)
+            try
             {
-                serial++;
-                categoriesListGirdView.Rows.Add(serial, category.CategoryName,category.Id);
+                int serial = 0;
+                categoriesListGirdView.Rows.Clear();
+                foreach (var category in categories)
+                {
+                    serial++;
+                    categoriesListGirdView.Rows.Add(serial, category.CategoryName, category.Id);
+                }
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

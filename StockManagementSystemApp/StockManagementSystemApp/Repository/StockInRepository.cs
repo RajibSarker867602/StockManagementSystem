@@ -14,6 +14,7 @@ namespace StockManagementSystemApp.Repository
     {
         ConnectionClass connection;
         SqlCommand cmd;
+        SqlDataReader reader;
         public DataTable LoadCompanys()
         {
 
@@ -35,15 +36,15 @@ namespace StockManagementSystemApp.Repository
 
             return dataTable;
         }
-        
+
         public DataTable LoadCategorys()
         {
 
             connection = new ConnectionClass();
-            string query  = @"SELECT * FROM Categories";
+            string query = @"SELECT * FROM Categories";
             cmd = new SqlCommand(query, connection.GetConnection());
 
-       
+
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
             DataTable dataTable = new DataTable();
             dataAdapter.Fill(dataTable);
@@ -57,7 +58,7 @@ namespace StockManagementSystemApp.Repository
         {
 
             connection = new ConnectionClass();
-            string query = @"SELECT * FROM Items where CategoryId = '" + stockInModel.CatId+ "'";
+            string query = @"SELECT * FROM Items where CategoryId = '" + stockInModel.CatId + "' AND CompanyId='"+stockInModel.ComId+"'";
             cmd = new SqlCommand(query, connection.GetConnection());
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
@@ -77,11 +78,11 @@ namespace StockManagementSystemApp.Repository
 
         public DataTable ComWiseCat(StockInModel stockInModel)
         {
-           
+
             connection = new ConnectionClass();
-            string query = @"select c.Id, c.Name from Items as i left join Categories as c on c.Id = i.CategoryId  where i.CompanyId = '"+stockInModel.ComId+"'  group by c.Id, c.Name";
+            string query = @"select c.Id, c.Name from Items as i left join Categories as c on c.Id = i.CategoryId  where i.CompanyId = '" + stockInModel.ComId + "'  group by c.Id, c.Name";
             cmd = new SqlCommand(query, connection.GetConnection());
-      
+
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
             DataTable dataTable = new DataTable();
             dataAdapter.Fill(dataTable);
@@ -96,7 +97,7 @@ namespace StockManagementSystemApp.Repository
             connection.GetClose();
 
             return dataTable;
-          
+
         }
 
         public DataTable LoadItems()
@@ -129,17 +130,17 @@ namespace StockManagementSystemApp.Repository
             connection = new ConnectionClass();
             if (!string.IsNullOrEmpty(stockinModel.Id))
             {
-              string  query = @"Update StockIn set ItemId =  '" + stockinModel.ItemId + "', Quantity = '" + stockinModel.StockInQty + "' WHERE Id='" + stockinModel.Id + "'";
-              cmd = new SqlCommand(query, connection.GetConnection());
+                string query = @"Update StockIn set ItemId =  '" + stockinModel.ItemId + "', Quantity = '" + stockinModel.StockInQty + "' WHERE Id='" + stockinModel.Id + "'";
+                cmd = new SqlCommand(query, connection.GetConnection());
             }
             else
             {
-               string query = @"INSERT INTO StockIn (ItemId, Quantity, CreatedDate) VALUES ( " + stockinModel.ItemId + ", '" + stockinModel.StockInQty + "', '" + stockinModel.CreatedDate + "')";
-               cmd = new SqlCommand(query, connection.GetConnection());
+                string query = @"INSERT INTO StockIn (ItemId, Quantity, CreatedDate) VALUES ( " + stockinModel.ItemId + ", '" + stockinModel.StockInQty + "', '" + stockinModel.CreatedDate + "')";
+                cmd = new SqlCommand(query, connection.GetConnection());
             }
             int isExecuted;
             isExecuted = cmd.ExecuteNonQuery();
-    
+
             connection.GetClose();
 
             return isExecuted;
@@ -189,7 +190,7 @@ namespace StockManagementSystemApp.Repository
 
             foreach (DataRow row in dataTable.Rows)
             {
-                 reQty = Convert.ToInt32(row["ReOrderLevel"]);
+                reQty = Convert.ToInt32(row["ReOrderLevel"]);
             }
             int reOrderLavel;
 
@@ -212,7 +213,7 @@ namespace StockManagementSystemApp.Repository
 
             connection = new ConnectionClass();
             string query = @"SELECT sum(StockIn.Quantity) AS totalStockInQty, sum(StockOut.Quantity) AS totalStockOutQty FROM StockIn 
-LEFT OUTER JOIN StockOut ON StockIn.ItemId = StockOut.ItemId WHERE StockIn.ItemId = '" + stockinModel.ItemId +"'  GROUP BY StockIn.ItemId";
+                            LEFT OUTER JOIN StockOut ON StockIn.ItemId = StockOut.ItemId WHERE StockIn.ItemId = '" + stockinModel.ItemId + "'  GROUP BY StockIn.ItemId";
             cmd = new SqlCommand(query, connection.GetConnection());
 
             SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
@@ -245,32 +246,31 @@ LEFT OUTER JOIN StockOut ON StockIn.ItemId = StockOut.ItemId WHERE StockIn.ItemI
             return avilavelStock;
 
         }
-
-        //public DataTable ReOrderLavel(StockInModel stockinModel)
-        //{
-
-        //    sqlConnection = new SqlConnection(connectionString);
-        //    commandString = @"SELECT * FROM Items where Id='"+ stockinModel.ItemId + "'";
-        //    sqlCommand = new SqlCommand(commandString, sqlConnection);
-
-        //    sqlConnection.Open();
-
-        //    SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand);
-        //    DataTable dataTable = new DataTable();
-        //    dataAdapter.Fill(dataTable);
-
-        //    DataRow row = dataTable.NewRow();
-
-        //    row[0] = 0;
-        //    row[1] = "Please Select Item";
-        //    dataTable.Rows.InsertAt(row, 0);
-
-        //    //if (dataTable.Rows.Count > 0)
-        //    //    districtComboBox.DataSource = dataTable;
-
-        //    sqlConnection.Close();
-
-        //    return dataTable;
-        //}
+        public int GetItemAvailableQuantity(int id)
+        {
+            int quantity = 0;
+            connection = new ConnectionClass();
+            string query = "Select Quantity From StockIn Where ItemId=@id";
+            try
+            {
+                cmd = new SqlCommand(query, connection.GetConnection());
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    quantity += Convert.ToInt32(reader["Quantity"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                quantity = 0;
+            }
+            finally
+            {
+                connection.GetClose();
+            }
+            return quantity;
+        }
     }
 }

@@ -73,6 +73,46 @@ namespace StockManagementSystemApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fahima {
+            get {
+                object obj = ResourceManager.GetObject("Fahima", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mehadi {
+            get {
+                object obj = ResourceManager.GetObject("Mehadi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nowrin {
+            get {
+                object obj = ResourceManager.GetObject("Nowrin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Raju {
+            get {
+                object obj = ResourceManager.GetObject("Raju", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StockManagementPic {
             get {
                 object obj = ResourceManager.GetObject("StockManagementPic", resourceCulture);
@@ -86,6 +126,16 @@ namespace StockManagementSystemApp.Properties {
         internal static System.Drawing.Bitmap StockManagementPic2 {
             get {
                 object obj = ResourceManager.GetObject("StockManagementPic2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tasnia {
+            get {
+                object obj = ResourceManager.GetObject("Tasnia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

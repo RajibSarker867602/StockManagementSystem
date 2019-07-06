@@ -29,7 +29,7 @@ namespace StockManagementSystemApp.UI
         {
             userLabel.Text = "";
             passwordLabel.Text = "";
-            userLabel.Text = "User Name- " + LoginForm.UserName;
+            userLabel.Text = "User Name - " + LoginForm.UserName;
             passwordLabel.Text = LoginForm.Password;
         }
 
@@ -55,6 +55,30 @@ namespace StockManagementSystemApp.UI
         {
             StockInForm stockInForm = new StockInForm();
             stockInForm.Show();
+        }
+
+        private void stockOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            stockOutForm form = new stockOutForm();
+            form.Show();
+        }
+
+        private void searchViewSummarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            searchAndViewItemsSummaryForm search = new searchAndViewItemsSummaryForm();
+            search.Show();
+        }
+
+        private void viewBetweenTwoDatesReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewBetweenTwoDatesReportForm view = new viewBetweenTwoDatesReportForm();
+            view.Show();
+        }
+
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            aboutForm about = new aboutForm();
+            about.Show();
         }
     }
 }

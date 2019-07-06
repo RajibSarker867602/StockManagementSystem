@@ -42,10 +42,8 @@
             this.availableQtyTextBox = new System.Windows.Forms.TextBox();
             this.stockInqtyTextBox = new System.Windows.Forms.TextBox();
             this.StockInSaveButton = new System.Windows.Forms.Button();
-            this.stockInIdTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.stockInDataGridView = new System.Windows.Forms.DataGridView();
-            this.stockInModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +59,8 @@
             this.reorderLavelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availableQtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stockInModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.stockInDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockInModelBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(32, 36);
+            this.label1.Location = new System.Drawing.Point(70, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 0;
@@ -79,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(32, 75);
+            this.label2.Location = new System.Drawing.Point(70, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 0;
@@ -89,7 +89,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(32, 109);
+            this.label3.Location = new System.Drawing.Point(70, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 0;
@@ -99,7 +99,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(351, 44);
+            this.label4.Location = new System.Drawing.Point(389, 67);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 0;
@@ -109,7 +109,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(333, 75);
+            this.label5.Location = new System.Drawing.Point(371, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 0;
@@ -119,7 +119,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(336, 109);
+            this.label6.Location = new System.Drawing.Point(374, 132);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 13);
             this.label6.TabIndex = 0;
@@ -129,7 +129,7 @@
             // 
             this.comNameComboBox.DisplayMember = "ID";
             this.comNameComboBox.FormattingEnabled = true;
-            this.comNameComboBox.Location = new System.Drawing.Point(143, 36);
+            this.comNameComboBox.Location = new System.Drawing.Point(181, 59);
             this.comNameComboBox.Name = "comNameComboBox";
             this.comNameComboBox.Size = new System.Drawing.Size(163, 21);
             this.comNameComboBox.TabIndex = 1;
@@ -140,7 +140,7 @@
             // 
             this.catNameComboBox.DisplayMember = "ID";
             this.catNameComboBox.FormattingEnabled = true;
-            this.catNameComboBox.Location = new System.Drawing.Point(143, 67);
+            this.catNameComboBox.Location = new System.Drawing.Point(181, 90);
             this.catNameComboBox.Name = "catNameComboBox";
             this.catNameComboBox.Size = new System.Drawing.Size(163, 21);
             this.catNameComboBox.TabIndex = 1;
@@ -151,7 +151,7 @@
             // 
             this.itemNameComboBox.DisplayMember = "Id";
             this.itemNameComboBox.FormattingEnabled = true;
-            this.itemNameComboBox.Location = new System.Drawing.Point(143, 101);
+            this.itemNameComboBox.Location = new System.Drawing.Point(181, 124);
             this.itemNameComboBox.Name = "itemNameComboBox";
             this.itemNameComboBox.Size = new System.Drawing.Size(163, 21);
             this.itemNameComboBox.TabIndex = 1;
@@ -161,7 +161,7 @@
             // reorderLavelTextBox
             // 
             this.reorderLavelTextBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.reorderLavelTextBox.Location = new System.Drawing.Point(431, 41);
+            this.reorderLavelTextBox.Location = new System.Drawing.Point(469, 64);
             this.reorderLavelTextBox.Name = "reorderLavelTextBox";
             this.reorderLavelTextBox.ReadOnly = true;
             this.reorderLavelTextBox.Size = new System.Drawing.Size(163, 20);
@@ -170,36 +170,27 @@
             // availableQtyTextBox
             // 
             this.availableQtyTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.availableQtyTextBox.Location = new System.Drawing.Point(431, 75);
+            this.availableQtyTextBox.Location = new System.Drawing.Point(469, 98);
             this.availableQtyTextBox.Name = "availableQtyTextBox";
             this.availableQtyTextBox.Size = new System.Drawing.Size(163, 20);
             this.availableQtyTextBox.TabIndex = 2;
             // 
             // stockInqtyTextBox
             // 
-            this.stockInqtyTextBox.Location = new System.Drawing.Point(431, 109);
+            this.stockInqtyTextBox.Location = new System.Drawing.Point(469, 132);
             this.stockInqtyTextBox.Name = "stockInqtyTextBox";
             this.stockInqtyTextBox.Size = new System.Drawing.Size(163, 20);
             this.stockInqtyTextBox.TabIndex = 2;
             // 
             // StockInSaveButton
             // 
-            this.StockInSaveButton.Location = new System.Drawing.Point(500, 135);
+            this.StockInSaveButton.Location = new System.Drawing.Point(538, 158);
             this.StockInSaveButton.Name = "StockInSaveButton";
             this.StockInSaveButton.Size = new System.Drawing.Size(94, 39);
             this.StockInSaveButton.TabIndex = 3;
             this.StockInSaveButton.Text = "Save";
             this.StockInSaveButton.UseVisualStyleBackColor = true;
             this.StockInSaveButton.Click += new System.EventHandler(this.StockInSaveButton_Click);
-            // 
-            // stockInIdTextBox
-            // 
-            this.stockInIdTextBox.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.stockInIdTextBox.Location = new System.Drawing.Point(145, 143);
-            this.stockInIdTextBox.Name = "stockInIdTextBox";
-            this.stockInIdTextBox.ReadOnly = true;
-            this.stockInIdTextBox.Size = new System.Drawing.Size(110, 20);
-            this.stockInIdTextBox.TabIndex = 5;
             // 
             // label7
             // 
@@ -232,16 +223,11 @@
             this.availableQtyDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn1});
             this.stockInDataGridView.DataSource = this.stockInModelBindingSource;
-            this.stockInDataGridView.Location = new System.Drawing.Point(143, 189);
+            this.stockInDataGridView.Location = new System.Drawing.Point(181, 203);
             this.stockInDataGridView.Name = "stockInDataGridView";
-            this.stockInDataGridView.Size = new System.Drawing.Size(509, 150);
+            this.stockInDataGridView.Size = new System.Drawing.Size(443, 259);
             this.stockInDataGridView.TabIndex = 4;
-            this.stockInDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockInDataGridView_CellContentClick);
-            this.stockInDataGridView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stockInDataGridView_CellContentDoubleClick);
-            // 
-            // stockInModelBindingSource
-            // 
-            this.stockInModelBindingSource.DataSource = typeof(StockManagementSystemApp.Models.StockInModel);
+
             // 
             // Id
             // 
@@ -295,6 +281,7 @@
             this.Action.DataPropertyName = "Action";
             this.Action.HeaderText = "Action";
             this.Action.Name = "Action";
+            this.Action.Visible = false;
             // 
             // Date
             // 
@@ -346,14 +333,30 @@
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Visible = false;
             // 
+            // stockInModelBindingSource
+            // 
+            this.stockInModelBindingSource.DataSource = typeof(StockManagementSystemApp.Models.StockInModel);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.SlateBlue;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(-1, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(767, 38);
+            this.label8.TabIndex = 360;
+            this.label8.Text = "Stock In";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // StockInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(765, 517);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.stockInIdTextBox);
             this.Controls.Add(this.stockInDataGridView);
             this.Controls.Add(this.StockInSaveButton);
             this.Controls.Add(this.stockInqtyTextBox);
@@ -368,7 +371,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-           // this.Name = "StockInForm";
+            this.MaximizeBox = false;
+            
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Stock In Form";
             this.Load += new System.EventHandler(this.StockIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.stockInDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stockInModelBindingSource)).EndInit();
@@ -392,11 +398,11 @@
         private System.Windows.Forms.TextBox availableQtyTextBox;
         private System.Windows.Forms.TextBox stockInqtyTextBox;
         private System.Windows.Forms.Button StockInSaveButton;
-        private System.Windows.Forms.TextBox stockInIdTextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockInQtyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView stockInDataGridView;
         private System.Windows.Forms.BindingSource stockInModelBindingSource;
+        public System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn SL;

@@ -43,7 +43,7 @@ namespace StockManagementSystemApp.Manager
         {
             return _itemRepository.GetItems();
         }
-        public List<Item> GetItemsByCaGetItemsByCategoryAndCompanytegory(int categoryId, int companyId)
+        public List<Item> GetItemsByCategoryAndCompany(int categoryId, int companyId)
         {
             return _itemRepository.GetItemsByCategoryAndCompany(categoryId, companyId);
         }

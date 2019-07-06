@@ -84,23 +84,26 @@ namespace StockManagementSystemApp.UI
         }
         private void ItemForm_Load(object sender, EventArgs e)
         {
-
-            categoryComboBox.DataSource = _itemManager.GetCategoriesInCategoryCombobox();
-            companyComboBox.DataSource = _itemManager.GetCompanysInCompanyCombobox();
-            itemDataGridView.DataSource = _itemManager.ShowItemsInDatagridview();
-            categoryComboBox.Text = "Please Select Category";
-            companyComboBox.Text = "Please Select Company";
-            reorderTextBox.Text = "0";
+            try
+            {
+                categoryComboBox.DataSource = _itemManager.GetCategoriesInCategoryCombobox();
+                companyComboBox.DataSource = _itemManager.GetCompanysInCompanyCombobox();
+                itemDataGridView.DataSource = _itemManager.ShowItemsInDatagridview();
+                categoryComboBox.Text = "Please Select Category";
+                companyComboBox.Text = "Please Select Company";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         public bool Validation()
         {
 
             if (categoryComboBox.Text == "Please Select Category")
             {
-
                 messageLabel.Text = "Select Category First!";
                 return false;
-
             }
             if (companyComboBox.Text == "Please Select Company")
             {
@@ -135,14 +138,20 @@ namespace StockManagementSystemApp.UI
 
         private void itemDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            itemDataGridView.CurrentRow.Selected = true;
-            itemNameTextBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Name"].FormattedValue.ToString();
-            item.Id = Convert.ToInt32(itemDataGridView.Rows[e.RowIndex].Cells["SL"].FormattedValue);
-            categoryComboBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Category"].FormattedValue.ToString();
-            companyComboBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Company"].FormattedValue.ToString();
-            reorderTextBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["ReOrderLevel"].FormattedValue.ToString();
-            saveItemButton.Text = "Update";
+            try
+            {
+                itemDataGridView.CurrentRow.Selected = true;
+                itemNameTextBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Name"].FormattedValue.ToString();
+                item.Id = Convert.ToInt32(itemDataGridView.Rows[e.RowIndex].Cells["SL"].FormattedValue);
+                categoryComboBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Category"].FormattedValue.ToString();
+                companyComboBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["Company"].FormattedValue.ToString();
+                reorderTextBox.Text = itemDataGridView.Rows[e.RowIndex].Cells["ReOrderLevel"].FormattedValue.ToString();
+                saveItemButton.Text = "Update";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
-
 }

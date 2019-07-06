@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -50,7 +53,8 @@
     <Compile Include="Manager\CategoryManager.cs" />
     <Compile Include="Manager\CompanyManager.cs" />
     <Compile Include="Manager\ItemManager.cs" />
-    <Compile Include="Manager\StockInManagers.cs" />
+    <Compile Include="Manager\StockInManager.cs" />
+    <Compile Include="Manager\StockOutManager.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Company.cs" />
@@ -64,7 +68,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ItemRepository.cs" />
     <Compile Include="Repository\StockInRepository.cs" />
+    <Compile Include="Repository\StockOutRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="UI\aboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\aboutForm.designer.cs">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\categorySetupForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +112,29 @@
     <Compile Include="UI\ProgressForm.Designer.cs">
       <DependentUpon>ProgressForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\searchAndViewItemsSummaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\searchAndViewItemsSummaryForm.designer.cs">
+      <DependentUpon>searchAndViewItemsSummaryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\StockInForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\StockInForm.designer.cs">
       <DependentUpon>StockInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\stockOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\stockOutForm.designer.cs">
+      <DependentUpon>stockOutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\viewBetweenTwoDatesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\viewBetweenTwoDatesReportForm.designer.cs">
+      <DependentUpon>viewBetweenTwoDatesReportForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +146,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\aboutForm.resx">
+      <DependentUpon>aboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\categorySetupForm.resx">
+      <DependentUpon>categorySetupForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\companySetupForm.resx">
       <DependentUpon>companySetupForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,13 +167,18 @@
     <EmbeddedResource Include="UI\ProgressForm.resx">
       <DependentUpon>ProgressForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\searchAndViewItemsSummaryForm.resx">
+      <DependentUpon>searchAndViewItemsSummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\StockInForm.resx">
       <DependentUpon>StockInForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\DataSources\StockManagementSystem.Models.Category.datasource" />
-    <None Include="Properties\DataSources\StockManagementSystem.Models.Company.datasource" />
-    <None Include="Properties\DataSources\StockManagementSystem.Models.Item.datasource" />
-    <None Include="Properties\DataSources\StockManagementSystemApp.Models.StockInModel.datasource" />
+    <EmbeddedResource Include="UI\stockOutForm.resx">
+      <DependentUpon>stockOutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\viewBetweenTwoDatesReportForm.resx">
+      <DependentUpon>viewBetweenTwoDatesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,10 +202,13 @@
     <Content Include="Resources\About.ico" />
     <Content Include="Resources\CompanySetup.ico" />
     <Content Include="Resources\CompanySetup2.ico" />
+    <Content Include="Resources\Fahima.jpg" />
     <Content Include="Resources\Item.ico" />
     <Content Include="Resources\ItemSetup.ico" />
     <Content Include="Resources\LoginIcon.ico" />
     <Content Include="Resources\Matiasam-Ios7-Style-Stock.ico" />
+    <Content Include="Resources\Mehadi.jpg" />
+    <Content Include="Resources\Nowrin.jpg" />
     <Content Include="Resources\Raju.jpg" />
     <Content Include="Resources\Search.ico" />
     <Content Include="Resources\Search2.ico" />
@@ -179,6 +222,7 @@
     <Content Include="Resources\StockManagementPic1.jpg" />
     <Content Include="Resources\StockManagementPic21.jpg" />
     <Content Include="Resources\StockOut.ico" />
+    <Content Include="Resources\Tasnia.jpg" />
     <Content Include="Resources\top_image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

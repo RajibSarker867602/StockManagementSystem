@@ -91,12 +91,19 @@ namespace StockManagementSystemApp.UI
         }
         private void BindCompanysListGridView(List<Company> companies)
         {
-            int serial = 0;
-            companysListGirdView.Rows.Clear();
-            foreach (var company in companies)
+            try
             {
-                serial++;
-                companysListGirdView.Rows.Add(serial, company.CompanyName, company.Id);
+                int serial = 0;
+                companysListGirdView.Rows.Clear();
+                foreach (var company in companies)
+                {
+                    serial++;
+                    companysListGirdView.Rows.Add(serial, company.CompanyName, company.Id);
+                }
+            }
+            catch(Exception exception)
+            {
+                MessageBox.Show(exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private bool IsFormValid()

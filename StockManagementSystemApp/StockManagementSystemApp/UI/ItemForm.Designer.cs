@@ -127,6 +127,7 @@
             this.reorderTextBox.Name = "reorderTextBox";
             this.reorderTextBox.Size = new System.Drawing.Size(208, 29);
             this.reorderTextBox.TabIndex = 4;
+            this.reorderTextBox.Text = "0";
             // 
             // label4
             // 
