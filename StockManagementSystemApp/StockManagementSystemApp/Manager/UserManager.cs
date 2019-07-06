@@ -1,12 +1,12 @@
-﻿using StockManagementSystem.Repository;
-using StockManagementSystem.Models;
+﻿using StockManagementSystemApp.Repository;
+using StockManagementSystemApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockManagementSystem.Manager
+namespace StockManagementSystemApp.Manager
 {
     public class UserManager
     {

@@ -113,6 +113,7 @@
             this.stockInToolStripMenuItem.Name = "stockInToolStripMenuItem";
             this.stockInToolStripMenuItem.Size = new System.Drawing.Size(172, 30);
             this.stockInToolStripMenuItem.Text = "Stock In";
+            this.stockInToolStripMenuItem.Click += new System.EventHandler(this.stockInToolStripMenuItem_Click);
             // 
             // stockOutToolStripMenuItem
             // 

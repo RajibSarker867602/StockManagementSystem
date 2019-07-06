@@ -1,5 +1,5 @@
-﻿using StockManagementSystem.Manager;
-using StockManagementSystem.Models;
+﻿using StockManagementSystemApp.Manager;
+using StockManagementSystemApp.Models;
 using StockManagementSystemApp.UI;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StockManagementSystem.UI
+namespace StockManagementSystemApp.UI
 {
     public partial class categorySetupForm : Form
     {

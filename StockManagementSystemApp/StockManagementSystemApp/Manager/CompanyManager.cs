@@ -1,12 +1,12 @@
-﻿using StockManagementSystem.Models;
-using StockManagementSystem.Repository;
+﻿using StockManagementSystemApp.Models;
+using StockManagementSystemApp.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StockManagementSystem.Manager
+namespace StockManagementSystemApp.Manager
 {
     class CompanyManager
     {

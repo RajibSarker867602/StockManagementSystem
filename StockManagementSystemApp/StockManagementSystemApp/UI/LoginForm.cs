@@ -1,5 +1,5 @@
-﻿using StockManagementSystem.Manager;
-using StockManagementSystem.Models;
+﻿using StockManagementSystemApp.Manager;
+using StockManagementSystemApp.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

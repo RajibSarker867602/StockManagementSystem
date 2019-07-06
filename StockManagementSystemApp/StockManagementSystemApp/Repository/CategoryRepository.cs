@@ -1,4 +1,4 @@
-﻿using StockManagementSystem.Models;
+﻿using StockManagementSystemApp.Models;
 using StockManagementSystemApp.Repository;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StockManagementSystem.Repository
+namespace StockManagementSystemApp.Repository
 {
     class CategoryRepository
     {

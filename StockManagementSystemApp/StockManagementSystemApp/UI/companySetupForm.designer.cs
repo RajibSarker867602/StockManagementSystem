@@ -1,4 +1,4 @@
-﻿namespace StockManagementSystem.UI
+﻿namespace StockManagementSystemApp.UI
 {
     partial class companySetupForm
     {

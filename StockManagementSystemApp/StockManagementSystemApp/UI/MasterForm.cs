@@ -1,4 +1,4 @@
-﻿using StockManagementSystem.UI;
+﻿using StockManagementSystemApp.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,6 +49,12 @@ namespace StockManagementSystemApp.UI
         {
             companySetupForm company = new companySetupForm();
             company.Show();
+        }
+
+        private void stockInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StockInForm stockInForm = new StockInForm();
+            stockInForm.Show();
         }
     }
 }
